@@ -45,3 +45,9 @@ form{
       flex-direction: column;
       align-items: center;
     }
+    .agradecimento{
+      display: grid; 
+      grid-area: 1fr 1fr 1fr / 1fr 1fr 1fr;
+      align-items: center;
+      justify-items: center;
+    }

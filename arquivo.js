@@ -135,9 +135,17 @@ function mascara_cdg()
             {
                 if (cdg_formatado[5]!=undefined)
                 {
-                    document.getElementById("cdg").value=cdg_formatado.slice(0,5)+"//"+cdg_formatado[5];
+                    document.getElementById("cdg").value=cdg_formatado.slice(0,5)+"/"+cdg_formatado[5];
                 }
             } 
+
+    if (cdg_formatado[6]!="/")
+                    {
+                        if (cdg_formatado[6]!=undefined)
+                        {
+                            document.getElementById("cdg").value=cdg_formatado.slice(0,6)+"/"+cdg_formatado[6];
+                        }
+                    }         
 
             if (cdg_formatado[10]!="-")
                 {
@@ -146,14 +154,28 @@ function mascara_cdg()
                         document.getElementById("cdg").value=cdg_formatado.slice(0,10)+"-"+cdg_formatado[10];
                     }
                 }
+    
     if (cdg_formatado[14]!=".")
         {
             if (cdg_formatado[14]!=undefined)
             {
-                document.getElementById("cdg").value=cdg_formatado.slice(0,14)+".9."+cdg_formatado[14];
+                document.getElementById("cdg").value=cdg_formatado.slice(0,14)+"."+cdg_formatado[14];
             }
         }
-
+    if (cdg_formatado[15]!="9")
+        {
+            if (cdg_formatado[15]!=undefined)
+            {
+               document.getElementById("cdg").value=cdg_formatado.slice(0,15)+"9"+cdg_formatado[15];       
+            }
+            }    
+            if (cdg_formatado[16]!=undefined)
+    if (cdg_formatado[16]!=".")
+        {
+                    {
+                        document.getElementById("cdg").value=cdg_formatado.slice(0,16)+"."+cdg_formatado[16];
+                    }
+        }
 }
 
 const switchModal = () => {
